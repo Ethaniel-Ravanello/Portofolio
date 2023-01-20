@@ -41,19 +41,11 @@ export default function Hero({}: Props) {
 						duration: 1,
 					}}
 				>
-					<p className="font-poppins text-2xl text-gray-500 my-5">
+					<p className="font-poppins text-xl mx-auto sm:text-center md:text-start md:text-2xl text-gray-500 my-5">
 						Web Developer - Front End Engineer
 					</p>
-					<p className="font-poppins text-6xl my-5 text-primary-600">
+					<p className="font-poppins uppercase text-2xl md:text-3xl lg:text-7xl mx-auto text-center md:text-start my-5 text-primary-600">
 						Ethaniel Ravanello
-					</p>
-					<p className="font-poppins my-5 text-md text-primary-600 leading-10 ">
-						I'm a front-end engineer who just graduated from Alterra academy
-						Bootcamp. I did several projects while in the bootcamp using
-						Javascript as my main programming language and Framework/Library
-						such as ReactJS, NextJS, Tailwinds, Bootstrap and ChakraUI. And I'm
-						currently learning other frameworks and languages such as Typescript
-						and Astro.
 					</p>
 					<div className="gap-8">
 						<Link
