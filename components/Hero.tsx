@@ -47,7 +47,7 @@ export default function Hero({}: Props) {
 					<p className="font-poppins uppercase text-2xl md:text-3xl lg:text-7xl mx-auto text-center md:text-start my-5 text-primary-600">
 						Ethaniel Ravanello
 					</p>
-					<div className="gap-8">
+					<div className="gap-8 text-center md:text-start">
 						<Link
 							className="text-primary-500 uppercase font-poppins text-xl mr-5"
 							href="#about"
