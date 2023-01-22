@@ -3,10 +3,8 @@ import React from "react";
 import hero from "../public/ryan.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-
+import { Link } from "react-scroll";
 type Props = {};
-
 export default function Hero({}: Props) {
 	return (
 		<div className="max-w-7xl mx-auto mt-[100px] md:mt-[200px] max-h-7xl align-middle flex items-center justify-center">
@@ -50,19 +48,31 @@ export default function Hero({}: Props) {
 					<div className="gap-8 text-center md:text-start">
 						<Link
 							className="text-primary-500 uppercase font-poppins text-xl mr-5"
-							href="#about"
+							to="about"
+							spy={true}
+							smooth={true}
+							offset={-200}
+							duration={500}
 						>
 							About
 						</Link>
 						<Link
 							className="text-primary-500 uppercase font-poppins text-xl mr-5"
-							href="#skills"
+							to="skills"
+							spy={true}
+							smooth={true}
+							offset={50}
+							duration={500}
 						>
 							Skills
 						</Link>
 						<Link
-							className="text-primary-500 uppercase font-poppins text-xl"
-							href="#project"
+							className="text-primary-500 uppercase font-poppins text-xl mr-5"
+							to="#about"
+							spy={true}
+							smooth={true}
+							offset={50}
+							duration={500}
 						>
 							Project
 						</Link>
