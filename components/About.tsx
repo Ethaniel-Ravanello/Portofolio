@@ -2,30 +2,31 @@
 import React from "react";
 import Image from "next/image";
 import pict from "../public/pict.jpg";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 type Props = {};
 
 export default function About({}: Props) {
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
 	return (
 		<div className="max-w-7xl  mx-auto">
 			<motion.p
-				initial={{
-					opacity: 0,
-				}}
-				animate={{
-					opacity: 1,
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
 				className="text-white text-center mb-10 text-4xl font-poppins"
 			>
 				A B O U T
 			</motion.p>
 			<motion.div
-				initial={{
-					opacity: 0,
-				}}
-				animate={{
-					opacity: 1,
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
 				className="grid md:grid-cols-2 place-items-center gap-20"
 			>
