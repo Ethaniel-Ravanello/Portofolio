@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useRef } from "react";
 import { SocialIcon } from "react-social-icons";
 import { useInView } from "framer-motion";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiFillFile } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { BsHeadphones } from "react-icons/bs";
 
@@ -13,7 +13,7 @@ export default function Contact({}: Props) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 	return (
-		<div className="max-w-7xl h-screen mx-auto mb-[100px]">
+		<div className="max-w-7xl h-[600px] mx-auto mb-[100px]">
 			<motion.h3
 				ref={ref}
 				style={{
@@ -28,7 +28,7 @@ export default function Contact({}: Props) {
 				Get To Know Me
 			</motion.h3>
 			<div>
-				<div className="w-full max-h-screen flex justify-between">
+				<div className="w-full flex justify-between">
 					<div className="border-2 border-2-white w-[350px] h-[140px] rounded-xl text-center">
 						<AiOutlineMail
 							size={35}
@@ -57,17 +57,32 @@ export default function Contact({}: Props) {
 						</p>
 					</div>
 				</div>
-				<div>
-					<SocialIcon
-						url="https://github.com/Ethaniel-Ravanello"
-						fgColor="gray"
-						bgColor="transparent"
-					/>
-					<SocialIcon
-						url="https://www.linkedin.com/in/ethaniel-ravanello-a60810251/"
-						fgColor="gray"
-						bgColor="transparent"
-					/>
+				<div className="text-center justify-center mt-10 gap-10 flex">
+					<div className="w-[150px] h-[80px] border-2 border-2-white rounded-lg">
+						<SocialIcon
+							url="https://github.com/Ethaniel-Ravanello"
+							fgColor="white"
+							bgColor="transparent"
+						/>
+						<p className="text-white font-poppins font-semibold">GitHub</p>
+					</div>
+					<div className="w-[150px] h-[80px] border-2 border-2-white rounded-lg">
+						<SocialIcon
+							url="https://www.linkedin.com/in/ethaniel-ravanello-a60810251/"
+							fgColor="white"
+							bgColor="transparent"
+						/>
+						<p className="text-white font-poppins font-semibold">LinkedIn</p>
+					</div>
+					<div
+						href=""
+						className="w-[150px] h-[80px] border-2 border-2-white rounded-lg"
+					>
+						<AiFillFile size={23} className="text-white mx-auto mt-4" />
+						<p className="text-white font-poppins font-semibold mt-[11px]">
+							Resume
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
