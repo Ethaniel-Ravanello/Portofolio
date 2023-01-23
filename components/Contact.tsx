@@ -31,7 +31,7 @@ export default function Contact({}: Props) {
 			</motion.h3>
 			<div>
 				<div className="w-full flex flex-col md:flex-row justify-between">
-					<div className="border-2 border-2-white w-[350px] h-[140px] rounded-xl text-center">
+					<div className="border-2 border-2-white mx-auto md:mx-0 w-[350px] h-[140px] rounded-xl text-center">
 						<AiOutlineMail
 							size={35}
 							className="text-white text-center mx-auto mt-4 mb-5"
@@ -40,7 +40,7 @@ export default function Contact({}: Props) {
 							ravaneloe@gmail.com
 						</p>
 					</div>
-					<div className="border-2 border-2-white w-[350px] h-[140px] rounded-xl text-center">
+					<div className="border-2 border-2-white mx-auto md:mx-0 w-[350px] h-[140px] rounded-xl text-center">
 						<FaMapMarkerAlt
 							size={35}
 							className="text-white text-center mx-auto mt-4 mb-2"
@@ -49,7 +49,7 @@ export default function Contact({}: Props) {
 							Jalan Galunggung Blok A 10 NO.16 Tangerang Selatan, Banten
 						</p>
 					</div>
-					<div className="border-2 border-2-white w-[350px] h-[140px] rounded-xl text-center">
+					<div className="border-2 border-2-white mx-auto md:mx-0 w-[350px] h-[140px] rounded-xl text-center">
 						<BsHeadphones
 							size={35}
 							className="text-white text-center mx-auto mt-4 mb-5"

@@ -12,7 +12,7 @@ export default function About({}: Props) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 	return (
-		<div className="max-w-7xl  mx-auto">
+		<div className="max-w-7xl px-[20px] mx-auto">
 			<motion.p
 				ref={ref}
 				style={{

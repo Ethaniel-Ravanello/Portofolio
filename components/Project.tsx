@@ -106,7 +106,7 @@ export default function Project({}: Props) {
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 					backgroundImage: `url(${slides[currentIndex].url})`,
 				}}
-				className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+				className="w-full h-[200px] sm:h-[400px] lg:h-full object-contain rounded-2xl bg-center bg-cover duration-500"
 			></motion.div>
 			<motion.div
 				ref={ref}
@@ -114,7 +114,7 @@ export default function Project({}: Props) {
 					opacity: isInView ? 1 : 0,
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
-				className="absolute top-[80%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+				className="absolute top-[50%] sm:top-[65%] lg:top-[80%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
 			>
 				<BsChevronCompactLeft onClick={prevSlide} size={30} />
 			</motion.div>
@@ -124,7 +124,7 @@ export default function Project({}: Props) {
 					opacity: isInView ? 1 : 0,
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
-				className="absolute top-[80%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+				className="absolute top-[50%] sm:top-[65%] lg:top-[80%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
 			>
 				<BsChevronCompactRight onClick={nextSlide} size={30} />
 			</motion.div>
