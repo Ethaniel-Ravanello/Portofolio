@@ -3,6 +3,7 @@ import React from "react";
 import hero from "../public/ryan.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import pfp from "public/pfp.jpg";
 import { Link } from "react-scroll";
 type Props = {};
 export default function Hero({}: Props) {
@@ -23,7 +24,7 @@ export default function Hero({}: Props) {
 					}}
 					className="w-[250px] h-[250px] mx-auto md:mx-0 sm:w-[350px] sm:h-[350px] rounded-full overflow-hidden shadow-2xl border-primary-300 bg-primary-300 border-[20px] border-solid"
 				>
-					<Image src={hero} alt="Profile Picture" />
+					<Image src={pfp} alt="Profile Picture" />
 				</motion.div>
 				<motion.div
 					className="sm:text-center md:text-start"

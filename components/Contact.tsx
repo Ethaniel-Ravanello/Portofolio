@@ -15,7 +15,7 @@ export default function Contact({}: Props) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
 	return (
-		<div className="max-w-7xl h-[600px] mx-auto mb-[100px]">
+		<div className="max-w-7xl h-[600px] mx-auto mb-[100px] px-[30px]">
 			<motion.h3
 				ref={ref}
 				style={{
