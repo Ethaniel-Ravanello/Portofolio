@@ -63,9 +63,6 @@ export default function Project({}: Props) {
 					opacity: isInView ? 1 : 0,
 					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 				}}
-				transition={{
-					duration: isInView ? 1 : 0,
-				}}
 				className="text-white text-4xl mb-10 text-center"
 			>
 				P R O J E C T S

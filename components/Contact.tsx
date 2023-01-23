@@ -74,15 +74,14 @@ export default function Contact({}: Props) {
 						/>
 						<p className="text-white font-poppins font-semibold">LinkedIn</p>
 					</div>
-					<div
-						href=""
-						className="w-[150px] h-[80px] border-2 border-2-white rounded-lg"
-					>
-						<AiFillFile size={23} className="text-white mx-auto mt-4" />
-						<p className="text-white font-poppins font-semibold mt-[11px]">
-							Resume
-						</p>
-					</div>
+					<a href="/Ethaniel_Resume.pdf" download={"Resume"}>
+						<div className="w-[150px] h-[80px] border-2 border-2-white rounded-lg">
+							<AiFillFile size={23} className="text-white mx-auto mt-4" />
+							<p className="text-white font-poppins font-semibold mt-[11px]">
+								Resume
+							</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
