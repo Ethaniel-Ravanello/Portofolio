@@ -16,7 +16,7 @@ export default function Home() {
 				<title>Ethaniel Portofolio</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
-			<section id="header" className="overflow-x-hidden snap-start ">
+			<section id="header" className="overflow-x-hidden sticky top-0 z-100">
 				<Header />
 			</section>
 			<section id="hero" className="">

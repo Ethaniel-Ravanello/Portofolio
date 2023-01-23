@@ -6,6 +6,7 @@ import { useInView } from "framer-motion";
 import { AiOutlineMail, AiFillFile } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { BsHeadphones } from "react-icons/bs";
+import { IoCaretUpSharp } from "react-icons/io5";
 
 type Props = {};
 
@@ -84,6 +85,9 @@ export default function Contact({}: Props) {
 					</a>
 				</div>
 			</div>
+            <div>
+            <IoCaretUpSharp/>
+            </div>
 		</div>
 	);
 }
