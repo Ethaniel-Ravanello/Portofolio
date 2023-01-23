@@ -1,6 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 type Props = {};
 
@@ -56,9 +57,11 @@ export default function Header({}: Props) {
 					fgColor="gray"
 					bgColor="transparent"
 				/>
-				<p className="uppercase hidden md:inline-flex text-sm text-gray-400 align-middle text-center">
-					GET IN CONTACT WITH ME
-				</p>
+				<Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+					<p className="uppercase hidden md:inline-flex text-sm cursor-pointer text-gray-400 align-middle text-center">
+						GET TO KNOW ME
+					</p>
+				</Link>
 			</motion.div>
 		</header>
 	);
