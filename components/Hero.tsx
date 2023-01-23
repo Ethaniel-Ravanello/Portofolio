@@ -68,7 +68,7 @@ export default function Hero({}: Props) {
 						</Link>
 						<Link
 							className="text-primary-500 uppercase font-poppins text-xl mr-5"
-							to="#about"
+							to="project"
 							spy={true}
 							smooth={true}
 							offset={50}
