@@ -47,7 +47,7 @@ export default function Hero({}: Props) {
 					</p>
 					<div className="gap-8 text-center md:text-start">
 						<Link
-							className="text-primary-500 uppercase font-poppins text-xl mr-5"
+							className="text-primary-500 uppercase font-poppins text-xl mr-5 cursor-pointer"
 							to="about"
 							spy={true}
 							smooth={true}
@@ -57,17 +57,17 @@ export default function Hero({}: Props) {
 							About
 						</Link>
 						<Link
-							className="text-primary-500 uppercase font-poppins text-xl mr-5"
+							className="text-primary-500 uppercase font-poppins text-xl mr-5 cursor-pointer"
 							to="skills"
 							spy={true}
 							smooth={true}
-							offset={50}
+							offset={-40}
 							duration={500}
 						>
 							Skills
 						</Link>
 						<Link
-							className="text-primary-500 uppercase font-poppins text-xl mr-5"
+							className="text-primary-500 uppercase font-poppins text-xl mr-5 cursor-pointer"
 							to="project"
 							spy={true}
 							smooth={true}

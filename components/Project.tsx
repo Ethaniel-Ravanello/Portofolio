@@ -2,6 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 type Props = {};
 
 export default function Project({}: Props) {
@@ -49,26 +52,93 @@ export default function Project({}: Props) {
 	const goToSlide = (slideIndex: any) => {
 		setCurrentIndex(slideIndex);
 	};
+
+	const ref = useRef(null);
+	const isInView = useInView(ref, { once: true });
 	return (
-		<div className="max-w-7xl h-[700px] mx-auto py-16 px-4 relative mb-[100px]">
-			<h3 className="text-white text-4xl mb-10 text-center">P R O J E C T S</h3>
-			<h3 className="text-white text-center justify-center text-3xl font-poppins my-4">
+		<div className="max-w-7xl h-[700px] mx-auto py-16 px-4 relative mb-[100px] ">
+			<motion.h3
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+				transition={{
+					duration: isInView ? 1 : 0,
+				}}
+				className="text-white text-4xl mb-10 text-center"
+			>
+				P R O J E C T S
+			</motion.h3>
+			<motion.h3
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+				initial={{
+					x: isInView ? 500 : 0,
+				}}
+				animate={{
+					x: isInView ? 0 : 500,
+				}}
+				className="text-white text-center justify-center text-3xl font-poppins my-4"
+			>
 				{slides[currentIndex].case}
-			</h3>
-			<h4 className="text-white text-center justify-center text-3xl font-poppins my-4">
+			</motion.h3>
+			<motion.h4
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+				initial={{
+					x: isInView ? -500 : 0,
+				}}
+				animate={{
+					x: isInView ? 0 : -500,
+				}}
+				className="text-white text-center justify-center text-3xl font-poppins my-4"
+			>
 				{slides[currentIndex].header}
-			</h4>
-			<div
-				style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+			</motion.h4>
+			<motion.div
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+					backgroundImage: `url(${slides[currentIndex].url})`,
+				}}
 				className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-			></div>
-			<div className="absolute top-[80%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+			></motion.div>
+			<motion.div
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+				className="absolute top-[80%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+			>
 				<BsChevronCompactLeft onClick={prevSlide} size={30} />
-			</div>
-			<div className="absolute top-[80%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+			</motion.div>
+			<motion.div
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+				className="absolute top-[80%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
+			>
 				<BsChevronCompactRight onClick={nextSlide} size={30} />
-			</div>
-			<div className="flex top-4 justify-center py-2">
+			</motion.div>
+			<motion.div
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+				className="flex top-4 justify-center py-2"
+			>
 				{slides.map((slides, slidesIndex) => (
 					<div
 						key={slidesIndex}
@@ -78,12 +148,18 @@ export default function Project({}: Props) {
 						<RxDotFilled />
 					</div>
 				))}
-			</div>
-			<div>
+			</motion.div>
+			<motion.div
+				ref={ref}
+				style={{
+					opacity: isInView ? 1 : 0,
+					transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+			>
 				<p className="text-white text-center text-xl font-poppins mt-5">
 					{slides[currentIndex].desc}
 				</p>
-			</div>
+			</motion.div>
 		</div>
 	);
 }

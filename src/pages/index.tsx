@@ -4,6 +4,7 @@ import Hero from "components/Hero";
 import About from "components/About";
 import Skills from "components/Skills";
 import Project from "components/Project";
+import Contact from "components/Contact";
 import { Inter } from "@next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,17 +19,20 @@ export default function Home() {
 			<section id="header" className="overflow-x-hidden snap-start ">
 				<Header />
 			</section>
-			<section id="hero" className="snap-center">
+			<section id="hero" className="">
 				<Hero />
 			</section>
-			<section id="about" className="snap-center mt-[400px]">
+			<section id="about" className=" mt-[400px]">
 				<About />
 			</section>
-			<section id="skills" className="snap-center mt-[400px]">
+			<section id="skills" className=" mt-[400px]">
 				<Skills />
 			</section>
-			<section id="project" className="snap-center">
+			<section id="project" className="">
 				<Project />
+			</section>
+			<section id="contact" className="mt-[600px]">
+				<Contact />
 			</section>
 		</>
 	);
