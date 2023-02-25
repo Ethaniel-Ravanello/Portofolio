@@ -6,36 +6,35 @@ import Skills from "components/Skills";
 import Project from "components/Project";
 import Contact from "components/Contact";
 import { Inter } from "@next/font/google";
-import icon from "public/triforce.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	return (
-		<>
-			<Head>
-				<title>Ethaniel Ravanello</title>
-				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<link rel="icon" href="/triforce.png" />
-			</Head>
-			<section id="header" className="overflow-x-hidden sticky top-0 z-100">
-				<Header />
-			</section>
-			<section id="hero" className="">
-				<Hero />
-			</section>
-			<section id="about" className=" mt-[400px]">
-				<About />
-			</section>
-			<section id="skills" className=" mt-[400px]">
-				<Skills />
-			</section>
-			<section id="project" className="">
-				<Project />
-			</section>
-			<section id="contact" className="mt-[600px]">
-				<Contact />
-			</section>
-		</>
-	);
+  return (
+    <>
+      <Head>
+        <title>Ethaniel Ravanello</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/triforce.png" />
+      </Head>
+      <section id="header" className="overflow-x-hidden sticky top-0 z-100">
+        <Header />
+      </section>
+      <section id="hero" className="">
+        <Hero />
+      </section>
+      <section id="about" className=" mt-[400px]">
+        <About />
+      </section>
+      <section id="skills" className=" mt-[400px]">
+        <Skills />
+      </section>
+      <section id="project" className="">
+        <Project />
+      </section>
+      <section id="contact" className="mt-[600px]">
+        <Contact />
+      </section>
+    </>
+  );
 }
