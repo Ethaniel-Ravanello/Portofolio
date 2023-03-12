@@ -55,7 +55,7 @@ export default function Hero({}: Props) {
               offset={-200}
               duration={500}
             >
-              About
+              About Me
             </Link>
             <Link
               className="text-primary-500 uppercase font-poppins text-xl mr-5 cursor-pointer"
