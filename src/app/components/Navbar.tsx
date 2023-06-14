@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "@images/Logo.png";
 const Navbar = () => {
   return (
-    <div className="w-full h-fit py-2 px-28 bg-background flex justify-between absolute top-0 text-text">
+    <div className="w-full h-fit py-2 px-28 bg-transparent flex justify-between absolute top-0 text-text">
       <div className="flex">
         <Image
           src={Logo}
@@ -13,7 +13,7 @@ const Navbar = () => {
         ></Image>
         <h2 className="font-bold text-3xl py-6">Ethaniel</h2>
       </div>
-      <div className="flex gap-x-10 py-8 text-xl font-bold">
+      <div className="flex gap-x-10 py-7 text-xl font-bold">
         <p>About</p>
         <p>Portofolio</p>
         <p>Contact</p>

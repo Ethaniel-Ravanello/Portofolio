@@ -21,6 +21,9 @@ module.exports = {
         text: "#E1E8F5",
         text2: "#1fd6ff",
       },
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
+      },
     },
   },
   plugins: [],
