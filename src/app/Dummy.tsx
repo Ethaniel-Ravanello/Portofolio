@@ -1,11 +1,11 @@
-import Akarashi from "@images/First.png";
-import Movies from "@images/Fourth.png";
-import GreenP from "@images/Seven.png";
-import Samara from "@images/Sixth.png";
-import Employee from "@images/Fifth.png";
-import Ikuz from "@images/Ikuz.png";
-import Dashboard from "@images/Second.png";
-import Bnb from "@images/Third.png";
+import Akarashi from "@images/Slideshow/First.png";
+import Movies from "@images/Slideshow/Fourth.png";
+import GreenP from "@images/Slideshow/Seven.png";
+import Samara from "@images/Slideshow/Sixth.png";
+import Employee from "@images/Slideshow/Fifth.png";
+import Ikuz from "@images/Slideshow/Ikuz.png";
+import Dashboard from "@images/Slideshow/Second.png";
+import Bnb from "@images/Slideshow/Third.png";
 
 const Data = [
   {
@@ -20,7 +20,7 @@ const Data = [
     img: Movies,
     name: "Hyrule Watch",
     role: "Front End Developer",
-    desc: "Hyrule Watch is a comprehensive online platform that serves as a one-stop destination for movie enthusiasts seeking detailed information, reviews, and updates on the latest films. With its user-friendly interface and vast database, Hyrule Watch allows users to explore and discover a wide range of movies, including synopses, cast and crew details, ratings, and much more. Stay informed and indulge in the world of cinema with Hyrule Watch.",
+    desc: "Hyrule Watch is a comprehensive online platform that serves as a one-stop destination for movie enthusiasts seeking detailed information, reviews, and updates on the latest films. With its user-friendly interface and vast database.",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const Data = [
     img: Samara,
     name: "Samara Land",
     role: "Front End Developer",
-    desc: "Samara Land is a property developer that has grown to have four main business units: Engineering Services, Advanced Material and Equipment Procurement, Housing and Industrial Area Development, and Integrated EPC. They have become a strategic partner of SOEs and ministries with 10 years of experience in the construction industry.",
+    desc: "Samara Land is a property developer that has grown to have four main business units: Engineering Services, Advanced Material and Equipment Procurement, Housing and Industrial Area Development, and Integrated EPC",
   },
   {
     id: 5,
