@@ -23,10 +23,10 @@ const Section3 = () => {
   };
 
   return (
-    <section className="snap-start bg-background h-screen w-full text-text pt-[100px]">
+    <section className="snap-start bg-background h-screen w-full text-text pt-[100px] px-28">
       <div className="relative">
         <div className="w-fit h-fit mx-auto mb-10 mt-2">
-          <h2 className="text-6xl font-extrabold">My Skills</h2>
+          <h2 className="text-6xl font-extrabold">My Projects</h2>
           <div className="w-full h-[4px] bg-text2 mt-2"></div>
         </div>
 
@@ -56,13 +56,13 @@ const Section3 = () => {
 
           <div
             onClick={prevSlide}
-            className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-10 text-2xl p-2 bg-white/10 text-white cursor-pointer rounded-full"
+            className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-1 text-2xl p-2 bg-white/10 text-white cursor-pointer rounded-full"
           >
             <BsChevronCompactLeft />
           </div>
           <div
             onClick={nextSlide}
-            className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-10 text-2xl p-2 bg-white/10 text-white cursor-pointer rounded-full"
+            className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-1 text-2xl p-2 bg-white/10 text-white cursor-pointer rounded-full"
           >
             <BsChevronCompactRight />
           </div>
