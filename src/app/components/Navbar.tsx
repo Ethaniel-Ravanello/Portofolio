@@ -4,7 +4,7 @@ import Image from "next/image";
 import Logo from "@images/Logo.png";
 const Navbar = () => {
   return (
-    <div className="w-full h-fit py-2 px-28 bg-transparent flex justify-between sticky top-0 z-10 text-text">
+    <div className="w-full h-fit py-2 px-28 bg-transparent flex justify-between absolute top-0 z-10 text-text">
       <div className="flex">
         <Image
           src={Logo}

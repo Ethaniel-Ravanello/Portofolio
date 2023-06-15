@@ -57,6 +57,13 @@ const Data = [
     role: "Front End Developer",
     desc: "Dashboard Alta is an application to simplify Alta team in managing mentees, mentors, and classes which becomes one application portal by making this dashboard",
   },
+  {
+    id: 8,
+    img: Bnb,
+    name: "AirBnb Clone",
+    role: "Front End Developer",
+    desc: "AirBnB Clone is a project i made during bootcamp to showcase my skills with learing how to do basic CRUD on the front end side and learn how to make a login and register page",
+  },
 ];
 
 export default Data;
