@@ -17,7 +17,7 @@ import Redux from "@images/Skills/Redux.png";
 
 const Section2 = () => {
   return (
-    <section className="snap-start bg-background h-full xl:h-screen w-full flex justify-center md:pt-[50px] lg:pt-[100px] px-2 lg:px-28">
+    <section className="snap-start bg-background h-full w-full flex justify-center md:pt-[50px] lg:pt-[100px] px-2 lg:px-28">
       <div className="w-full h-full">
         <div className="w-fit h-fit mx-auto mb-10">
           <h2 className="text-3xl md:text-6xl font-extrabold">My Skills</h2>
@@ -25,7 +25,7 @@ const Section2 = () => {
         </div>
         <div>
           <div className="w-full h-fit flex justify-center flex-wrap gap-x-14 md:px-5">
-            <div className="lg:w-[200px] lg:h-[200px] w-[100px] h-[100px] md:w-[150px] md:h-[150px]  bg-accent rounded-xl shadow-lg mb-8">
+            <div className="lg:w-[200px] lg:h-[200px] w-[100px] h-[100px] md:w-[150px] md:h-[150px] bg-accent rounded-xl shadow-lg mb-8">
               <Image
                 src={Html}
                 alt={"Html Logo"}
