@@ -8,14 +8,14 @@ import Section3 from "./components/Section3";
 export const metadata: Metadata = {
   title: "EthanielR",
   description: "My Personal Portofolio",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  // icons: {
+  //   icon: "/favicon.ico",
+  // },
 };
 
 export default function Home() {
   return (
-    <main className="snap-y snap-mandatory overflow-y-auto h-screen w-full bg-background text-text container-snap">
+    <main className="relative h-full w-full bg-background text-text">
       <Section1 />
       <Section2 />
       <Section3 />
