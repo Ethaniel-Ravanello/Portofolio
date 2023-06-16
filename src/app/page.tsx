@@ -16,14 +16,12 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="relative h-full w-full bg-background text-text">
-      <Navbar position={"sticky"} />
+    <main className="h-max w-full bg-background text-text">
       <Section1 />
       <Section2 />
       <section id="project">
         <Section3 />
       </section>
-      <Footer position="absolute" />
     </main>
   );
 }

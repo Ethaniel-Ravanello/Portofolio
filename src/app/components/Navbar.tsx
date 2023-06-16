@@ -2,24 +2,22 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-interface Props {
-  position: string;
-}
-
 import Logo from "@images/Logo.png";
-const Navbar = ({ position }: Props) => {
+const Navbar = () => {
   return (
     <div
-      className={`w-full h-fit px-2 lg:px-24 flex justify-between ${position} bg-background xl:bg-transparent top-0 z-10 text-text`}
+      className={`w-full h-fit px-5 md:px-16 lg:px-[10em] xl:px-[19em] flex justify-between $ bg-background xl:bg-transparent  text-text`}
     >
       <Link href="/">
         <div className="flex">
-          <Image
-            src={Logo}
-            alt={"Logo Navbar"}
-            className="w-[100px] h-[100px] object-contain -mr-[20px]"
-          ></Image>
-          <h2 className="font-semibold text-3xl py-6">Ethaniel</h2>
+          <div className="w-full h-full -ml-8">
+            <Image
+              src={Logo}
+              alt={"Logo Navbar"}
+              className="w-full h-full object-contain  pt-2.5"
+            ></Image>
+          </div>
+          <h2 className="font-semibold text-3xl pt-8 -ml-8">Ethaniel</h2>
         </div>
       </Link>
       <div className="hidden md:flex gap-x-10 py-7 text-xl font-semibold">

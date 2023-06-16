@@ -18,7 +18,6 @@ export const metadata: Metadata = {
 const AboutMe = () => {
   return (
     <>
-      <Navbar position="relative" />
       <div className=" bg-background text-text h-full lg:h-screen flex-rev flex w-full lg:justify-between lg:px-32  lg:items-center">
         <div className="md:mt-20 xl:-mt-40 lg:w-[50%] w-full px-5">
           <h1 className="text-3xl md:text-6xl font-semibold mb-10 mx-auto w-fit">
@@ -51,7 +50,6 @@ const AboutMe = () => {
           />
         </div>
       </div>
-      <Footer position={"relative"} />
     </>
   );
 };
