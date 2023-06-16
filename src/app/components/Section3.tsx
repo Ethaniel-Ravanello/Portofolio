@@ -51,7 +51,7 @@ const Section3 = () => {
               </p>
               <div className="mt-10 w-fit mx-auto md:mx-0">
                 <Link
-                  href="/"
+                  href={Data[index].href}
                   className="text-lg border-2 border-gray-50 rounded-full py-2 px-5 font-semibold hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
                 >
                   See more
