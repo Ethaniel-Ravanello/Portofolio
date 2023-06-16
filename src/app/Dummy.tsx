@@ -18,9 +18,9 @@ const Data = [
   {
     id: 2,
     img: Movies,
-    name: "Hyrule Watch",
+    name: "Zora Watch",
     role: "Front End Developer",
-    desc: "Hyrule Watch is a comprehensive online platform that serves as a one-stop destination for movie enthusiasts seeking detailed information, reviews, and updates on the latest films. With its user-friendly interface and vast database.",
+    desc: "Zora Watch is a comprehensive online platform that serves as a one-stop destination for movie enthusiasts seeking detailed information, reviews, and updates on the latest films. With its user-friendly interface and vast database.",
   },
   {
     id: 3,
