@@ -19,10 +19,10 @@ export default function Home() {
     <main className="relative h-full w-full bg-background text-text">
       <Navbar position={"sticky"} />
       <Section1 />
+      <Section2 />
       <section id="project">
-        <Section2 />
+        <Section3 />
       </section>
-      <Section3 />
       <Footer position="absolute" />
     </main>
   );

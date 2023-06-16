@@ -17,10 +17,7 @@ import Redux from "@images/Skills/Redux.png";
 
 const Section2 = () => {
   return (
-    <section
-      id="project"
-      className="snap-start bg-background h-full w-full flex justify-center md:pt-[50px] lg:pt-[9  0px] px-2 lg:px-28"
-    >
+    <section className="snap-start bg-background h-full w-full flex justify-center md:pt-[50px] lg:pt-[9  0px] px-2 lg:px-28">
       <div className="w-full h-full">
         <div className="w-fit h-fit mx-auto mb-10">
           <h2 className="text-3xl md:text-6xl font-semibold">My Skills</h2>

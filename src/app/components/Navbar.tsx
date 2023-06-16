@@ -26,7 +26,7 @@ const Navbar = ({ position }: Props) => {
         <Link href="/about-me" className="hover:text-text2">
           About Me
         </Link>
-        <Link href="#project" className="hover:text-text2">
+        <Link href="/#project" className="hover:text-text2">
           Project
         </Link>
         <Link href="/about-me" className="hover:text-text2">

@@ -24,7 +24,10 @@ const Section3 = () => {
   };
 
   return (
-    <section className="snap-start bg-background h-full md:h-screen w-full text-text pt-[200px] px-5 lg:px-2 xl:px-16">
+    <section
+      id="project"
+      className="snap-start bg-background h-full md:h-screen w-full text-text pt-[200px] px-5 lg:px-2 xl:px-16"
+    >
       <div className="relative">
         <div className="w-fit h-fit mx-auto mb-10 mt-2">
           <h2 className="text-3xl md:text-6xl font-semibold">My Projects</h2>
@@ -49,7 +52,7 @@ const Section3 = () => {
               <div className="mt-10 w-fit mx-auto md:mx-0">
                 <Link
                   href="/"
-                  className="text-lg border-2 border-gray-50 rounded-full py-2 px-5 font-semibold "
+                  className="text-lg border-2 border-gray-50 rounded-full py-2 px-5 font-semibold hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
                 >
                   See more
                 </Link>
