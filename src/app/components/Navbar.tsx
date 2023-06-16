@@ -10,7 +10,7 @@ const Navbar = () => {
     >
       <Link href="/">
         <div className="flex">
-          <div className="w-full h-full -ml-8">
+          <div className="w-[110px] h-[110px] -ml-8">
             <Image
               src={Logo}
               alt={"Logo Navbar"}

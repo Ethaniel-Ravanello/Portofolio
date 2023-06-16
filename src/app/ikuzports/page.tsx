@@ -1,10 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import type { Metadata } from "next";
 
 import Ikuz1 from "@images/Project/Ikuz/ikuz.jpg";
 import Ikuz2 from "@images/Project/Ikuz/ikuz2.jpg";
 import Ikuz3 from "@images/Project/Ikuz/ikuz3.png";
 import Ikuz4 from "@images/Project/Ikuz/ikuz4.png";
+
+export const metadata: Metadata = {
+  title: "Ethaniel | Project | Ikuzports",
+  description: "Some of my project",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
 const page = () => {
   return (
