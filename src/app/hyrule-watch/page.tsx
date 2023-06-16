@@ -5,6 +5,9 @@ import type { Metadata } from "next";
 import Hyrule1 from "@images/Project/Hyrule/Hyrule1.jpeg";
 import Hyrule2 from "@images/Project/Hyrule/Hyrule2.jpeg";
 
+import { FaReact } from "react-icons/fa";
+import { SiTailwindcss, SiJavascript, SiRedux } from "react-icons/si";
+
 export const metadata: Metadata = {
   title: "Ethaniel | Project | Ikuzports",
   description: "Some of my project",
@@ -40,6 +43,28 @@ const page = () => {
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
+        </div>
+      </div>
+
+      <div className="w-full py-10 px-5 md:px-16 lg:px-[10em] xl:px-[19em]">
+        <p className="text-4xl lg:text-6xl font-semibold mb-10">Built With</p>
+
+        <div className="flex justify-center w-fit mx-auto gap-x-14 ">
+          <div className="w-full h-full">
+            <FaReact className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
+
+          <div className="w-full h-full">
+            <SiTailwindcss className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
+
+          <div className="w-full h-full">
+            <SiJavascript className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
+
+          <div className="w-full h-full">
+            <SiRedux className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
         </div>
       </div>
     </div>

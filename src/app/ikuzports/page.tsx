@@ -7,6 +7,9 @@ import Ikuz2 from "@images/Project/Ikuz/ikuz2.jpg";
 import Ikuz3 from "@images/Project/Ikuz/ikuz3.png";
 import Ikuz4 from "@images/Project/Ikuz/ikuz4.png";
 
+import { FaReact } from "react-icons/fa";
+import { SiChakraui, SiJavascript, SiRedux } from "react-icons/si";
+
 export const metadata: Metadata = {
   title: "Ethaniel | Project | Ikuzports",
   description: "Some of my project",
@@ -55,6 +58,27 @@ const page = () => {
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
+        </div>
+      </div>
+      <div className="w-full py-10 px-5 md:px-16 lg:px-[10em] xl:px-[19em]">
+        <p className="text-4xl lg:text-6xl font-semibold mb-10">Built With</p>
+
+        <div className="flex justify-center w-fit mx-auto gap-x-14 ">
+          <div className="w-full h-full">
+            <FaReact className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
+
+          <div className="w-full h-full">
+            <SiChakraui className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
+
+          <div className="w-full h-full">
+            <SiJavascript className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
+
+          <div className="w-full h-full">
+            <SiRedux className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+          </div>
         </div>
       </div>
     </div>

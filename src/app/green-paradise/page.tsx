@@ -7,6 +7,8 @@ import Gp2 from "@images/Project/Green/Gp2.jpeg";
 import Gp3 from "@images/Project/Green/Gp3.jpeg";
 import Gp4 from "@images/Project/Green/Gp4.jpeg";
 
+import { SiTailwindcss, SiWordpress } from "react-icons/si";
+
 export const metadata: Metadata = {
   title: "Ethaniel | Project | Akarashi",
   description: "About Me Page",
@@ -55,6 +57,15 @@ const page = () => {
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
+        </div>
+      </div>
+      <div className="flex justify-center w-fit mx-auto gap-x-14 ">
+        <div className="w-full h-full">
+          <SiWordpress className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+        </div>
+
+        <div className="w-full h-full">
+          <SiTailwindcss className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
         </div>
       </div>
     </div>
