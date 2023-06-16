@@ -3,9 +3,15 @@ import Link from "next/link";
 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-const Footer = () => {
+interface Props {
+  position: string;
+}
+
+const Footer = ({ position }: Props) => {
   return (
-    <div className="w-full mx-auto h-fit bg-transparent lg:bg-background py-5 lg:px-32 flex justify-between md:justify-center gap-x-11 lg:sticky lg:bottom-0">
+    <div
+      className={`w-full mx-auto h-fit bg-transparent lg:bg-background py-5 lg:px-32 flex justify-center gap-x-11 ${position} bottom-0 lg:sticky lg:bottom-0 z-10`}
+    >
       <Link
         href="https://www.linkedin.com/in/ethaniel/"
         target="_blank"

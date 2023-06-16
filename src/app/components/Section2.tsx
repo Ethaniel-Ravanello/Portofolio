@@ -17,10 +17,13 @@ import Redux from "@images/Skills/Redux.png";
 
 const Section2 = () => {
   return (
-    <section className="snap-start bg-background h-full w-full flex justify-center md:pt-[50px] lg:pt-[100px] px-2 lg:px-28">
+    <section
+      id="project"
+      className="snap-start bg-background h-full w-full flex justify-center md:pt-[50px] lg:pt-[9  0px] px-2 lg:px-28"
+    >
       <div className="w-full h-full">
         <div className="w-fit h-fit mx-auto mb-10">
-          <h2 className="text-3xl md:text-6xl font-extrabold">My Skills</h2>
+          <h2 className="text-3xl md:text-6xl font-semibold">My Skills</h2>
           <div className="w-full h-[4px] bg-text2 mt-2"></div>
         </div>
         <div>

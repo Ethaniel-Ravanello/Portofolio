@@ -27,7 +27,7 @@ const Section3 = () => {
     <section className="snap-start bg-background h-full md:h-screen w-full text-text pt-[200px] px-5 lg:px-2 xl:px-16">
       <div className="relative">
         <div className="w-fit h-fit mx-auto mb-10 mt-2">
-          <h2 className="text-3xl md:text-6xl font-extrabold">My Projects</h2>
+          <h2 className="text-3xl md:text-6xl font-semibold">My Projects</h2>
           <div className="w-full h-[4px] bg-text2 mt-2"></div>
         </div>
 
@@ -35,7 +35,7 @@ const Section3 = () => {
           key={Data[index].id}
           className="overflow-x-hidden text-white block lg:flex items-center justify-center text-5xl transition-all ease-in-out transform translate-x-0 duration-500"
         >
-          <div className="block lg:flex items-center justify-center px-12">
+          <div className="block lg:flex items-center justify-center px-5">
             <div className="h-full">
               <h2 className="font-bold text-text2 text-3xl md:text-5xl animate-fade-in">
                 {Data[index].id}. {Data[index].name}
