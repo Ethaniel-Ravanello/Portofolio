@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 import Iku1 from "@images/Project/Ikuz/ikuz.jpg";
+import Iku2 from "@images/Project/Ikuz/ikuz2.png";
 import Iku3 from "@images/Project/Ikuz/ikuz3.png";
 import Iku4 from "@images/Project/Ikuz/ikuz4.png";
 
