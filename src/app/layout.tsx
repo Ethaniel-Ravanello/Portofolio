@@ -1,5 +1,8 @@
+"use client";
+
 import "./globals.css";
 import { Roboto } from "next/font/google";
+import ProgressBar from "./components/ProgrressBar";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -15,12 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <html lang="en">
+        <body>
+          <ProgressBar />
+          <Navbar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }
