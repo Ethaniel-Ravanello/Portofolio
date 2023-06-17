@@ -40,13 +40,6 @@ const page = () => {
         </div>
         <div className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg">
           <Image
-            src={Iku2}
-            alt="Foto Project"
-            className="w-full h-full object-contain rounded-lg"
-          />
-        </div>
-        <div className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg">
-          <Image
             src={Iku3}
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
