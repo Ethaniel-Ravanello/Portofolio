@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -24,13 +25,21 @@ const Section3 = () => {
   };
 
   return (
-    <section
+    <motion.section
       id="project"
-      className="snap-start bg-background h-full md:h-screen w-full text-text pt-[200px] px-5 lg:px-2 xl:px-16"
+      key={Data[index].id}
+      className="snap-start bg-background h-full md:h-screen w-full text-text pt-[20px] px-5 lg:px-2 xl:px-16"
     >
       <div className="relative">
         <div className="w-fit h-fit mx-auto mb-10 mt-2">
-          <h2 className="text-3xl md:text-6xl font-semibold">My Projects</h2>
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
+            className="text-3xl md:text-6xl font-semibold"
+          >
+            My Projects
+          </motion.h2>
           <div className="w-full h-[4px] bg-text2 mt-2"></div>
         </div>
 
@@ -40,32 +49,57 @@ const Section3 = () => {
         >
           <div className="block lg:flex items-center justify-center px-5">
             <div className="h-full">
-              <h2 className="font-bold text-text2 text-3xl md:text-5xl animate-fade-in">
+              <motion.h2
+                className="font-bold text-text2 text-3xl md:text-5xl"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
+              >
                 {Data[index].id}. {Data[index].name}
-              </h2>
-              <h3 className="my-5 text-2xl font-bold animate-fade-in">
+              </motion.h2>
+              <motion.h3
+                className="my-5 text-2xl font-bold"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.5, ease: "easeInOut" }}
+              >
                 {Data[index].role}
-              </h3>
-              <p className="max-w-[500px] font-lato leading-8 text-lg font-thin animate-fade-in">
+              </motion.h3>
+              <motion.p
+                className="max-w-[500px] font-lato leading-8 text-lg font-thin"
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.5, ease: "easeInOut" }}
+              >
                 {Data[index].desc}
-              </p>
-              <div className="mt-10 w-fit mx-auto md:mx-0">
+              </motion.p>
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.5, ease: "easeInOut" }}
+                className="mt-10 w-fit mx-auto md:mx-0"
+              >
                 <Link
                   href={Data[index].href}
                   className="text-lg border-2 border-gray-50 rounded-full py-2 px-5 font-semibold hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
                 >
                   See more
                 </Link>
-              </div>
+              </motion.div>
             </div>
 
-            <div className="w-fit h-fit mx-auto">
+            <motion.div
+              className="w-fit h-fit mx-auto"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.8, duration: 0.5, ease: "easeInOut" }}
+            >
               <Image
                 src={Data[index].img}
                 alt={""}
-                className="duration-500 ease-in-out animate-fade-in"
+                className="duration-500 ease-in-out"
               />
-            </div>
+            </motion.div>
           </div>
 
           <div
@@ -82,7 +116,7 @@ const Section3 = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
