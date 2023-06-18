@@ -34,7 +34,7 @@ const Section2 = () => {
       mainControl.start({ opacity: 1, scale: 1 });
       headingControl.start({ opacity: 1, y: 0 });
     }
-  }, [isInView]);
+  }, [headingControl, isInView, mainControl]);
 
   const skillDelay = 0.2;
   return (
