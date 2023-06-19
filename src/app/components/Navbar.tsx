@@ -6,7 +6,7 @@ import Logo from "@images/Logo.png";
 const Navbar = () => {
   return (
     <div
-      className={`w-full h-fit px-5 md:px-16 lg:px-[10em] xl:px-[19em] flex justify-between $ bg-background xl:bg-transparent  text-text`}
+      className={`w-full h-fit px-5 md:px-16 lg:px-[10em] xl:px-32 flex justify-between $ bg-background xl:bg-transparent  text-text`}
     >
       <Link href="/">
         <div className="flex">
@@ -27,9 +27,9 @@ const Navbar = () => {
         <Link href="/#project" className="hover:text-text2">
           Project
         </Link>
-        <Link href="/about-me" className="hover:text-text2">
+        <a href="./CV_Ethaniel.pdf" className="hover:text-text2">
           Resume
-        </Link>
+        </a>
       </div>
     </div>
   );
