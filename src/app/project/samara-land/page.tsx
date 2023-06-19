@@ -1,14 +1,14 @@
-"use-client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { SiTailwindcss, SiWordpress } from "react-icons/si";
 
-import Gp1 from "@images/Project/Green/Gp1.jpeg";
-import Gp2 from "@images/Project/Green/Gp2.jpeg";
-import Gp3 from "@images/Project/Green/Gp3.jpeg";
-import Gp4 from "@images/Project/Green/Gp4.jpeg";
+import Samara1 from "@images/Project/Samara/Samara1.jpeg";
+import Samara2 from "@images/Project/Samara/Samara2.jpeg";
+import Samara3 from "@images/Project/Samara/Samara3.jpeg";
+import Samara4 from "@images/Project/Samara/Samara4.jpeg";
 
 const Page = () => {
   return (
@@ -20,11 +20,13 @@ const Page = () => {
         className="pb-5 px-5 md:px-16 lg:px-[10em] xl:px-[19em]"
       >
         <h1 className="text-4xl lg:text-6xl font-semibold mb-10">
-          Green Paradise
+          Samara Land
         </h1>
         <p className="max-w-[500px] leading-8">
-          Green Paradise is a platform for the SamaraLand Developer made for
-          people who are looking to buy a house or many more.
+          Samara Land is a property developer that has grown to have four main
+          business units: Engineering Services, Advanced Material and Equipment
+          Procurement, Housing and Industrial Area Development, and Integrated
+          EPC
         </p>
       </motion.div>
       <motion.div
@@ -39,7 +41,7 @@ const Page = () => {
           className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
         >
           <Image
-            src={Gp1}
+            src={Samara1}
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
@@ -50,7 +52,7 @@ const Page = () => {
           className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
         >
           <Image
-            src={Gp2}
+            src={Samara2}
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
@@ -61,7 +63,7 @@ const Page = () => {
           className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
         >
           <Image
-            src={Gp3}
+            src={Samara3}
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
@@ -72,7 +74,7 @@ const Page = () => {
           className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
         >
           <Image
-            src={Gp4}
+            src={Samara4}
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
