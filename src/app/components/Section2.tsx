@@ -40,7 +40,7 @@ const Section2 = () => {
   return (
     <motion.section
       ref={ref}
-      className="snap-start bg-background h-full w-full flex justify-center md:pt-[50px] lg:pt-[90px] px-2 lg:px-[10em]"
+      className="snap-start bg-background h-full w-full flex justify-center md:pt-[50px] lg:pt-[90px] px-2 lg:px-[10em] mb-10"
     >
       <div className="w-full h-full">
         <div className="w-fit h-fit mx-auto mb-10">

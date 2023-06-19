@@ -20,7 +20,7 @@ const Data = [
     id: 2,
     img: Movies,
     name: "Zora Watch",
-    href: "/project/hyrule-watch",
+    href: "/project/zora-watch",
     role: "Front End Developer",
     desc: "Zora Watch is a comprehensive online platform that serves as a one-stop destination for movie enthusiasts seeking detailed information, reviews, and updates on the latest films. With its user-friendly interface and vast database.",
   },
