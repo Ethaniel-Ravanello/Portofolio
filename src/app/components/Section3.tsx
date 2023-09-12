@@ -32,14 +32,7 @@ const Section3 = () => {
     >
       <div className="relative">
         <div className="w-fit h-fit mx-auto mb-10 mt-2">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-            className="text-3xl md:text-6xl font-semibold"
-          >
-            My Projects
-          </motion.h2>
+          <h2 className="text-3xl md:text-6xl font-semibold">My Projects</h2>
           <div className="w-full h-[4px] bg-text2 mt-2"></div>
         </div>
 

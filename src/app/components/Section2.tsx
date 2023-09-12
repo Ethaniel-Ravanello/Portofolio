@@ -247,7 +247,7 @@ const Section2 = () => {
                 <Image
                   src={Redux}
                   alt={"Redux Logo"}
-                  className="lg:w-[130px] lg:h-[130px] md:w-[100px] md:h-[100px] w-[50px] h-[50px] mx-auto mt-6 lg:mt-8 object-contain"
+                  className="lg:w-[130px] lg:h-[130px] md:w-[100px] md:h-[100px] w-[50px] h-[50px] mx-auto mt-6 lg:mt-5 object-contain"
                 />
                 <p className="w-fit mx-auto lg:mt-5 mt-2">Redux</p>
               </motion.div>
