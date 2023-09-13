@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiRedux } from "react-icons/si";
@@ -25,6 +26,21 @@ const Page = () => {
           information, reviews, and updates on the latest films. With its
           user-friendly interface and vast database.
         </p>
+
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.5, ease: "easeInOut" }}
+          className="mt-10"
+        >
+          <Link
+            href={"https://movies-web-react.vercel.app/"}
+            target="_blank"
+            className="text-lg border-2 border-gray-50 rounded-full py-2 px-5 font-semibold hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
+          >
+            Check out the Website
+          </Link>
+        </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: -20 }}

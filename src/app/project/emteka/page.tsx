@@ -1,18 +1,22 @@
 import React from "react";
 import type { Metadata } from "next";
 
-import CrudMern from "./CrudMern";
+import Emteka from "./Emteka";
 
 export const metadata: Metadata = {
-  title: "Crud MERN | Project",
-  description: "Crud Mern",
+  title: "Emteka | Project",
+  description: "Emteka",
   icons: {
     icon: "/favicon.ico",
   },
 };
 
 const Page = () => {
-  return <CrudMern />;
+  return (
+    <>
+      <Emteka />
+    </>
+  );
 };
 
 export default Page;

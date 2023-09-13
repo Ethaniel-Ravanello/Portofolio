@@ -5,12 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript, SiRedux } from "react-icons/si";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
-import Aka1 from "@images/Project/Akarashi/Aka1.jpeg";
-import Aka2 from "@images/Project/Akarashi/Aka2.jpeg";
-import Aka3 from "@images/Project/Akarashi/Aka3.jpeg";
-import Aka4 from "@images/Project/Akarashi/Aka4.jpeg";
+import Emteka1 from "@images/Project/Emteka/Emteka1.png";
+import Emteka2 from "@images/Project/Emteka/Emteka2.png";
 
 const Page = () => {
   return (
@@ -21,10 +20,12 @@ const Page = () => {
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
         className="pb-5 px-5 md:px-16 lg:px-[10em] xl:px-[19em]"
       >
-        <h1 className="text-4xl lg:text-6xl font-semibold mb-10">Akarashi</h1>
+        <h1 className="text-4xl lg:text-6xl font-semibold mb-10">Emteka</h1>
         <p className="max-w-[500px] leading-8">
-          A platform that allows gamers to explore a vast library of titles,
-          search for specific games based on their preferences or genres.
+          Emteka is a web-based assessment application designed to help you
+          measure and map overall Mathematics abilities. Emteka provides an
+          adaptive and personalized learning experience through advanced
+          features.
         </p>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -33,13 +34,11 @@ const Page = () => {
           className="mt-10"
         >
           <Link
-            href={
-              "https://github.com/Ethaniel-Ravanello/Akarashi-Game-Database"
-            }
+            href={"https://www.emteka.id/"}
             target="_blank"
             className="text-lg border-2 border-gray-50 rounded-full py-2 px-5 font-semibold hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
           >
-            Check out the Code
+            Check out the Website
           </Link>
         </motion.div>
       </motion.div>
@@ -55,7 +54,7 @@ const Page = () => {
           className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
         >
           <Image
-            src={Aka1}
+            src={Emteka1}
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
@@ -66,29 +65,7 @@ const Page = () => {
           className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
         >
           <Image
-            src={Aka2}
-            alt="Foto Project"
-            className="w-full h-full object-contain rounded-lg"
-          />
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
-        >
-          <Image
-            src={Aka3}
-            alt="Foto Project"
-            className="w-full h-full object-contain rounded-lg"
-          />
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="w-full h-full lg:w-[40%] lg:h-[40%] mx-auto mt-3 my-5 box-shadow shadow-lg shadow-white/30 rounded-lg"
-        >
-          <Image
-            src={Aka4}
+            src={Emteka2}
             alt="Foto Project"
             className="w-full h-full object-contain rounded-lg"
           />
@@ -107,7 +84,7 @@ const Page = () => {
             whileTap={{ scale: 0.9 }}
             className="w-full h-full"
           >
-            <FaReact className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
+            <TbBrandNextjs className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
           </motion.div>
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -122,13 +99,6 @@ const Page = () => {
             className="w-full h-full"
           >
             <SiTypescript className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
-          </motion.div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-full h-full"
-          >
-            <SiRedux className="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-28 xl:h-28" />
           </motion.div>
         </motion.div>
       </motion.div>

@@ -5,8 +5,7 @@ import Samara from "@images/Slideshow/Sixth.png";
 import Employee from "@images/Slideshow/Fifth.png";
 import Ikuz from "@images/Slideshow/Ikuz.png";
 import Dashboard from "@images/Slideshow/Second.png";
-import Bnb from "@images/Slideshow/Third.png";
-
+import Emteka from "@images/Slideshow/Emteka.png";
 const Data = [
   {
     id: 1,
@@ -26,6 +25,14 @@ const Data = [
   },
   {
     id: 3,
+    img: Emteka,
+    name: "Emteka Landing Page",
+    href: "/project/emteka",
+    role: "Front End Developer",
+    desc: "Emteka is a web-based assessment application designed to help you measure and map overall Mathematics abilities. Emteka provides an adaptive and personalized learning experience through advanced features.",
+  },
+  {
+    id: 4,
     img: GreenP,
     name: "Green Paradise",
     href: "/project/green-paradise",
@@ -33,7 +40,7 @@ const Data = [
     desc: "Green Paradies is a platform for the SamaraLand Developer made for people who are looking to buy a house or many more",
   },
   {
-    id: 4,
+    id: 5,
     img: Samara,
     name: "Samara Land",
     href: "/project/samara-land",
@@ -41,7 +48,7 @@ const Data = [
     desc: "Samara Land is a property developer that has grown to have four main business units: Engineering Services, Advanced Material and Equipment Procurement, Housing and Industrial Area Development, and Integrated EPC",
   },
   {
-    id: 5,
+    id: 6,
     img: Employee,
     name: "CRUD Practice",
     href: "/project/crud-mern",
@@ -49,7 +56,7 @@ const Data = [
     desc: "This is a project i made as a MERN Fullstack developer learning how to do a basic CRUD.",
   },
   {
-    id: 6,
+    id: 7,
     img: Ikuz,
     name: "Ikuzports",
     href: "/project/ikuzports",
@@ -57,20 +64,12 @@ const Data = [
     desc: "Ikuzports is a website for sport lover to find a new friend to play together, user there can find an event with their desire sport and you can join a club too to play together within the same area or same kind of sport",
   },
   {
-    id: 7,
+    id: 8,
     img: Dashboard,
     name: "Dashboard Alta",
     href: "/project/dashboard-alta",
     role: "Front End Developer",
     desc: "Dashboard Alta is an application to simplify Alta team in managing mentees, mentors, and classes which becomes one application portal by making this dashboard",
-  },
-  {
-    id: 8,
-    img: Bnb,
-    name: "AirBnb Clone",
-    href: "/project/airbnb-clone",
-    role: "Front End Developer",
-    desc: "AirBnB Clone is a project i made during bootcamp to showcase my skills with learing how to do basic CRUD on the front end side and learn how to make a login and register page",
   },
 ];
 

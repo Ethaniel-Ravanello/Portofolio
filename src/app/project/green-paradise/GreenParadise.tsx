@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { SiTailwindcss, SiWordpress } from "react-icons/si";
 
@@ -26,6 +27,21 @@ const Page = () => {
           Green Paradise is a platform for the SamaraLand Developer made for
           people who are looking to buy a house or many more.
         </p>
+
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.5, ease: "easeInOut" }}
+          className="mt-10"
+        >
+          <Link
+            href={"https://greenparadise.id/"}
+            target="_blank"
+            className="text-lg border-2 border-gray-50 rounded-full py-2 px-5 font-semibold hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
+          >
+            Check out the Website
+          </Link>
+        </motion.div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
