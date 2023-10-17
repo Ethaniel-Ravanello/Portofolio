@@ -6,7 +6,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <div
-      className={`w-full mx-auto h-fit bg-transparent lg:bg-background py-5 lg:px-32 flex justify-center gap-x-11 `}
+      className={`w-full mx-auto h-fit bg-transparent lg:bg-background py-5 lg:px-32 flex justify-center gap-x-11`}
     >
       <Link
         href="https://www.linkedin.com/in/ethaniel/"

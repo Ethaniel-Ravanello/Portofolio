@@ -28,7 +28,7 @@ const Section3 = () => {
     <motion.section
       id="project"
       key={Data[index].id}
-      className="snap-start bg-background h-full md:h-screen w-full text-text pt-[210px] px-5 lg:px-2 xl:px-16"
+      className="snap-start bg-background h-full  w-full text-text pt-[210px] px-5 lg:px-2 xl:px-16"
     >
       <div className="relative">
         <div className="w-fit h-fit mx-auto mb-10 mt-2">

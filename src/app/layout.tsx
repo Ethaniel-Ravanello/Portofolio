@@ -22,9 +22,8 @@ export default function RootLayout({
       <html lang="en">
         <body>
           <ProgressBar />
-          <Navbar />
+
           {children}
-          <Footer />
         </body>
       </html>
     </>
